@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  api:
+    build: ./Flask
+    command: gunicorn --workers=5 --threads=2 -b 0.0.0.0:8000 app
+    volumes:
+      - ./Flask/:/usr/src/app/
+    ports:
+      - 8000:8000
+    env_file:
+      - ./Env/.env-prod
+  nginx:
+    build: ./nginx
+    ports:
+      - 5000:80
+    depends_on:
+      - api
