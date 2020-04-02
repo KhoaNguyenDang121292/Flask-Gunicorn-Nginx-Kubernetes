@@ -1,6 +1,9 @@
 pipeline {
-  agent any
+
+  agent { dockerfile true }
+
   stages {
+
     stage('Checkout source') {
       steps {
         git(url: 'https://github.com/KhoaNguyenDang121292/Flask-Gunicorn-Nginx-Kubernetes.git', branch: 'master')
@@ -8,11 +11,9 @@ pipeline {
     }
 
     stage('Build image') {
-      steps {
-        sh '''echo Delete old images
-docker rmi flaskgunicorndocker_api:latest flaskgunicorndocker_nginx:latest
-echo Build new images and run containers
-docker-compose -f docker-compose.dev.yml up -d --build'''
+      steps('Test') {
+        sh 'docker rmi flaskgunicorndocker_api:latest flaskgunicorndocker_nginx:latest'
+        sh 'docker-compose -f docker-compose.dev.yml up -d --build'
       }
     }
 
