@@ -15,8 +15,8 @@ pipeline {
 
     stage('Build image') {
       steps {
-        sh '/usr/local/bin/docker rmi flaskgunicorndocker_api:latest flaskgunicorndocker_nginx:latest'
-        sh '/usr/local/bin/docker-compose -f docker-compose.dev.yml up -d --build'
+        sh '/usr/local/bin/docker image tag flask-api:latest localhost:5000/flask-api'
+        sh '/usr/local/bin/docker push localhost:5000/flask-api'
       }
     }
 
