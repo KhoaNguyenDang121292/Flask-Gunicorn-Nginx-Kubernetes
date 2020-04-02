@@ -20,10 +20,8 @@ pipeline {
     stage('Push image to Docker registry local') {
       steps {
         sh 'echo Tag before push'
-        sh '/usr/local/bin/docker image tag gunicorn-nginx-kubernetes_master_nginx:latest
-            localhost:5000/gunicorn-nginx-kubernetes_master_nginx'
-        sh '/usr/local/bin/docker image tag gunicorn-nginx-kubernetes_master_flask-api:latest
-            localhost:5000/gunicorn-nginx-kubernetes_master_flask-api'
+        sh '/usr/local/bin/docker image tag gunicorn-nginx-kubernetes_master_nginx:latest localhost:5000/gunicorn-nginx-kubernetes_master_nginx'
+        sh '/usr/local/bin/docker image tag gunicorn-nginx-kubernetes_master_flask-api:latest localhost:5000/gunicorn-nginx-kubernetes_master_flask-api'
         sh '/usr/local/bin/docker push localhost:5000/gunicorn-nginx-kubernetes_master_nginx'
         sh '/usr/local/bin/docker push localhost:5000/gunicorn-nginx-kubernetes_master_flask-api'
       }
