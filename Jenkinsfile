@@ -9,8 +9,8 @@ pipeline {
 
     stage('Build image') {
       steps {
-        sh '/usr/local/bin/docker image tag flask-api:latest localhost:5000/flask-api'
-        sh '/usr/local/bin/docker push localhost:5000/flask-api'
+        sh 'echo Build docker-compose file'
+        sh '/usr/local/bin/docker-compose -f docker-compose.dev.yml up -d --build'
       }
     }
 
