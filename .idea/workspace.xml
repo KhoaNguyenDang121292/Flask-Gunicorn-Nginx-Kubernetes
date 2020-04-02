@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2018e42-4d07-4afe-abe4-5b05a6693c3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +15,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="357" />
-          <entry key="Jenkinsfile" value="287" />
+          <entry key="Jenkinsfile" value="375" />
           <entry key="cfg" value="12" />
           <entry key="conf" value="32" />
           <entry key="dummy" value="6" />
@@ -35,7 +35,7 @@
           <entry key="Ini" value="12" />
           <entry key="JSON" value="26" />
           <entry key="Markdown" value="6" />
-          <entry key="PLAIN_TEXT" value="707" />
+          <entry key="PLAIN_TEXT" value="795" />
           <entry key="Python" value="103" />
           <entry key="YAML" value="154" />
         </counts>
@@ -43,7 +43,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Dockerfile" value="6" />
-          <entry key="Jenkinsfile" value="1" />
+          <entry key="Jenkinsfile" value="3" />
           <entry key="cfg" value="1" />
           <entry key="conf" value="5" />
           <entry key="env" value="2" />
@@ -55,7 +55,7 @@
           <entry key="log" value="7" />
           <entry key="md" value="1" />
           <entry key="py" value="12" />
-          <entry key="sh" value="19" />
+          <entry key="sh" value="21" />
           <entry key="txt" value="3" />
           <entry key="yaml" value="13" />
           <entry key="yml" value="10" />
@@ -63,11 +63,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="19" />
+          <entry key="Bash" value="21" />
           <entry key="Ini" value="2" />
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="32" />
+          <entry key="PLAIN_TEXT" value="34" />
           <entry key="Python" value="12" />
           <entry key="YAML" value="23" />
         </counts>
@@ -79,8 +79,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Deploy/kubernetes/deploy-dev.sh">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Deploy/docker-compose/deploy-dev.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -161,6 +179,17 @@
             <path>
               <item name="FlaskGunicornDocker" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlaskGunicornDocker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlaskGunicornDocker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlaskGunicornDocker" type="462c0819:PsiDirectoryNode" />
+              <item name="Deploy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlaskGunicornDocker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlaskGunicornDocker" type="462c0819:PsiDirectoryNode" />
+              <item name="Deploy" type="462c0819:PsiDirectoryNode" />
+              <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FlaskGunicornDocker" type="b2602c69:ProjectViewProjectNode" />
@@ -379,13 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Deploy/docker-compose/deploy-dev.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -504,13 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Deploy/kubernetes/deploy-dev.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -542,10 +557,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+    <entry file="file://$PROJECT_DIR$/Deploy/docker-compose/deploy-dev.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Deploy/kubernetes/deploy-dev.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>
