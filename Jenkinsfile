@@ -10,8 +10,8 @@ pipeline {
     stage('Build image') {
       steps {
         sh 'echo Delete old containers'
-        sh '/usr/local/bin/docker rm gunicorn-nginx-kubernetes_master_nginx --force'
-        sh '/usr/local/bin/docker rm gunicorn-nginx-kubernetes_master_flask-api --force'
+        sh '/usr/local/bin/docker rm gunicorn-nginx-kubernetes_master_nginx_1 --force'
+        sh '/usr/local/bin/docker rm gunicorn-nginx-kubernetes_master_flask-api_1 --force'
         sh 'echo Delete old images'
         sh '/usr/local/bin/docker rmi gunicorn-nginx-kubernetes_master_nginx'
         sh '/usr/local/bin/docker rmi gunicorn-nginx-kubernetes_master_flask-api'
