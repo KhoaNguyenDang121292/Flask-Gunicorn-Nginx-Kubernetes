@@ -12,24 +12,28 @@ pipeline {
 
     stage('Build image') {
       steps {
-        sh 'echo Delete old containers'
-        sh '/usr/local/bin/docker rm gunicorn-nginx-kubernetes_master_nginx_1 --force'
-        sh '/usr/local/bin/docker rm gunicorn-nginx-kubernetes_master_flask-api_1 --force'
-        sh 'echo Delete old images'
-        sh '/usr/local/bin/docker rmi gunicorn-nginx-kubernetes_master_nginx'
-        sh '/usr/local/bin/docker rmi gunicorn-nginx-kubernetes_master_flask-api'
-        sh 'echo Build docker-compose file'
-        sh '/usr/local/bin/docker-compose -f docker-compose.dev.yml up -d --build'
+        sh 'eval $(minikube docker-env)'
+        sh 'kubectl delete services flask-api'
+        sh 'kubectl delete deployments flask-api'
+        sh 'docker rmi localhost:5000/flask_api:latest'
+        sh 'cd Flask'
+        sh 'docker build --tag localhost:5000/flask_api .'
+        sh 'cd ..'
       }
     }
 
     stage('Push image to Docker registry local') {
       steps {
-        sh 'echo Tag before push'
-        sh '/usr/local/bin/docker image tag gunicorn-nginx-kubernetes_master_nginx:latest localhost:5000/gunicorn-nginx-kubernetes_master_nginx'
-        sh '/usr/local/bin/docker image tag gunicorn-nginx-kubernetes_master_flask-api:latest localhost:5000/gunicorn-nginx-kubernetes_master_flask-api'
-        sh '/usr/local/bin/docker push localhost:5000/gunicorn-nginx-kubernetes_master_nginx'
-        sh '/usr/local/bin/docker push localhost:5000/gunicorn-nginx-kubernetes_master_flask-api'
+        sh 'echo Push image into Docker registry'
+        sh 'docker push localhost:5000/flask_api:latest'
+      }
+    }
+
+    stage('Run in k8s') {
+      steps {
+        sh 'kubectl apply -f Kubernetes/flask-api-deployment.yml'
+        sh 'kubectl apply -f Kubernetes/flask-api-service.yml'
+        sh 'kubectl apply -f Kubernetes/minikube-ingress.yml'
       }
     }
 

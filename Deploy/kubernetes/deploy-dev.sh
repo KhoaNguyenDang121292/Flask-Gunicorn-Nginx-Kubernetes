@@ -9,7 +9,7 @@ kubectl delete deployments flask-api
 # Delete old image
 docker rmi localhost:5000/flask_api:latest
 
-# Step 2: Build image
+# Step 2: Build new image
 cd Flask
 docker build --tag localhost:5000/flask_api .
 cd ..

@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2018e42-4d07-4afe-abe4-5b05a6693c3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Flask/gunicorn_starter.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kubernetes/flask-api-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kubernetes/flask-api-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kubernetes/minikube-ingress.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy-dev.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Deploy/kubernetes/deploy-dev.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Deploy/kubernetes/deploy-dev.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Env/.env-dev" beforeDir="false" afterPath="$PROJECT_DIR$/Env/.env-dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Flask/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/api/views/base/v1/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask/api/views/base/v1/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/log/2020-04-01.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Flask/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kubernetes/deployement-dev.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +16,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="684" />
-          <entry key="Jenkinsfile" value="1101" />
+          <entry key="Jenkinsfile" value="1212" />
           <entry key="cfg" value="12" />
           <entry key="conf" value="41" />
           <entry key="default" value="8" />
@@ -42,7 +27,7 @@
           <entry key="json" value="26" />
           <entry key="md" value="6" />
           <entry key="py" value="313" />
-          <entry key="sh" value="1286" />
+          <entry key="sh" value="1290" />
           <entry key="txt" value="3" />
           <entry key="yaml" value="117" />
           <entry key="yml" value="686" />
@@ -50,11 +35,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="1286" />
+          <entry key="Bash" value="1290" />
           <entry key="Ini" value="12" />
           <entry key="JSON" value="26" />
           <entry key="Markdown" value="6" />
-          <entry key="PLAIN_TEXT" value="1871" />
+          <entry key="PLAIN_TEXT" value="1982" />
           <entry key="Python" value="313" />
           <entry key="YAML" value="803" />
         </counts>
@@ -62,7 +47,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Dockerfile" value="21" />
-          <entry key="Jenkinsfile" value="5" />
+          <entry key="Jenkinsfile" value="6" />
           <entry key="cfg" value="1" />
           <entry key="conf" value="12" />
           <entry key="default" value="1" />
@@ -87,7 +72,7 @@
           <entry key="Ini" value="2" />
           <entry key="JSON" value="1" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="70" />
+          <entry key="PLAIN_TEXT" value="71" />
           <entry key="Python" value="38" />
           <entry key="YAML" value="100" />
         </counts>
@@ -107,11 +92,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Deploy/kubernetes/deploy-dev.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="71" lean-forward="true" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
+            <state relative-caret-position="396">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -174,7 +168,6 @@
         <option value="$PROJECT_DIR$/Kubernetes/deploy-dev.sh" />
         <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Jenkinsfile" />
         <option value="$PROJECT_DIR$/Flask/wsgi.py" />
         <option value="$PROJECT_DIR$/Flask/app.py" />
         <option value="$PROJECT_DIR$/Env/.env-dev" />
@@ -203,6 +196,7 @@
         <option value="$PROJECT_DIR$/Flask/api/views/__init__.py" />
         <option value="$PROJECT_DIR$/Flask/api/views/base/v1/routes.py" />
         <option value="$PROJECT_DIR$/Deploy/kubernetes/deploy-dev.sh" />
+        <option value="$PROJECT_DIR$/Jenkinsfile" />
       </list>
     </option>
   </component>
@@ -224,17 +218,6 @@
             <path>
               <item name="FlaskGunicornDocker" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlaskGunicornDocker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlaskGunicornDocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlaskGunicornDocker" type="462c0819:PsiDirectoryNode" />
-              <item name="Deploy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlaskGunicornDocker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlaskGunicornDocker" type="462c0819:PsiDirectoryNode" />
-              <item name="Deploy" type="462c0819:PsiDirectoryNode" />
-              <item name="kubernetes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FlaskGunicornDocker" type="b2602c69:ProjectViewProjectNode" />
@@ -379,13 +362,6 @@
             <caret column="33" selection-start-column="33" selection-end-column="33" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -607,8 +583,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Deploy/kubernetes/deploy-dev.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="71" lean-forward="true" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
+        <state relative-caret-position="396">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
         </state>
       </provider>
     </entry>
