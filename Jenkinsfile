@@ -17,7 +17,7 @@ pipeline {
         sh '/usr/local/bin/kubectl delete deployments flask-api --ignore-not-found=true'
         sh '/usr/local/bin/docker rmi localhost:5000/flask_api:latest'
         sh 'cd Flask'
-        sh '/usr/local/bin/docker build --tag localhost:5000/flask_api .'
+        sh '/usr/local/bin/docker build --tag localhost:5000/flask_api --file Flask/Dockerfile .'
         sh 'cd ..'
       }
     }

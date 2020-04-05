@@ -16,6 +16,6 @@ ENV APP_SETTINGS=development
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
-RUN pip install -r requirements.txt
+RUN pip install -r Flask/requirements.txt
 RUN chmod 777 gunicorn_starter.sh
 ENTRYPOINT ["./gunicorn_starter.sh"]
