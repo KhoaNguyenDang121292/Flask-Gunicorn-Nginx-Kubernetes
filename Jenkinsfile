@@ -15,7 +15,7 @@ pipeline {
         sh 'eval $(minikube docker-env)'
         sh '/usr/local/bin/kubectl delete services flask-api'
         sh '/usr/local/bin/kubectl delete deployments flask-api'
-        sh 'docker rmi localhost:5000/flask_api:latest'
+        sh '/usr/local/bin/docker rmi localhost:5000/flask_api:latest'
         sh 'cd Flask'
         sh 'docker build --tag localhost:5000/flask_api .'
         sh 'cd ..'
