@@ -13,8 +13,8 @@ pipeline {
     stage('Build image') {
       steps {
         sh 'eval $(minikube docker-env)'
-        sh 'kubectl delete services flask-api'
-        sh 'kubectl delete deployments flask-api'
+        sh '/usr/local/bin/kubectl delete services flask-api'
+        sh '/usr/local/bin/kubectl delete deployments flask-api'
         sh 'docker rmi localhost:5000/flask_api:latest'
         sh 'cd Flask'
         sh 'docker build --tag localhost:5000/flask_api .'
@@ -25,15 +25,15 @@ pipeline {
     stage('Push image to Docker registry local') {
       steps {
         sh 'echo Push image into Docker registry'
-        sh 'docker push localhost:5000/flask_api:latest'
+        sh '/usr/local/bin/docker push localhost:5000/flask_api:latest'
       }
     }
 
     stage('Run in k8s') {
       steps {
-        sh 'kubectl apply -f Kubernetes/flask-api-deployment.yml'
-        sh 'kubectl apply -f Kubernetes/flask-api-service.yml'
-        sh 'kubectl apply -f Kubernetes/minikube-ingress.yml'
+        sh '/usr/local/bin/kubectl apply -f Kubernetes/flask-api-deployment.yml'
+        sh '/usr/local/bin/kubectl apply -f Kubernetes/flask-api-service.yml'
+        sh '/usr/local/bin/kubectl apply -f Kubernetes/minikube-ingress.yml'
       }
     }
 

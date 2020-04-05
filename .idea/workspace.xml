@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2018e42-4d07-4afe-abe4-5b05a6693c3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Deploy/kubernetes/deploy-dev.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Deploy/kubernetes/deploy-dev.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +16,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="684" />
-          <entry key="Jenkinsfile" value="1212" />
+          <entry key="Jenkinsfile" value="1231" />
           <entry key="cfg" value="12" />
           <entry key="conf" value="41" />
           <entry key="default" value="8" />
@@ -39,7 +39,7 @@
           <entry key="Ini" value="12" />
           <entry key="JSON" value="26" />
           <entry key="Markdown" value="6" />
-          <entry key="PLAIN_TEXT" value="1982" />
+          <entry key="PLAIN_TEXT" value="2001" />
           <entry key="Python" value="313" />
           <entry key="YAML" value="803" />
         </counts>
@@ -104,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+            <state relative-caret-position="391">
+              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -590,8 +590,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+        <state relative-caret-position="391">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
         </state>
       </provider>
     </entry>
