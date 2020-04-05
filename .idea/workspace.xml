@@ -15,7 +15,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="684" />
-          <entry key="Jenkinsfile" value="1250" />
+          <entry key="Jenkinsfile" value="1258" />
           <entry key="cfg" value="12" />
           <entry key="conf" value="41" />
           <entry key="default" value="8" />
@@ -38,7 +38,7 @@
           <entry key="Ini" value="12" />
           <entry key="JSON" value="26" />
           <entry key="Markdown" value="6" />
-          <entry key="PLAIN_TEXT" value="2020" />
+          <entry key="PLAIN_TEXT" value="2028" />
           <entry key="Python" value="313" />
           <entry key="YAML" value="803" />
         </counts>
@@ -103,8 +103,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+            <state relative-caret-position="473">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -589,8 +589,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="473">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>

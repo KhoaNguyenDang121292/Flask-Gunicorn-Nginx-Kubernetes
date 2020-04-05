@@ -15,7 +15,7 @@ pipeline {
         sh 'eval $(minikube docker-env)'
         sh '/usr/local/bin/kubectl delete services flask-api --ignore-not-found=true'
         sh '/usr/local/bin/kubectl delete deployments flask-api --ignore-not-found=true'
-        sh '/usr/local/bin/docker rmi localhost:5000/flask_api:latest --ignore-not-found=true'
+        sh '/usr/local/bin/docker rmi localhost:5000/flask_api:latest'
         sh 'cd Flask'
         sh '/usr/local/bin/docker build --tag localhost:5000/flask_api .'
         sh 'cd ..'
@@ -31,9 +31,9 @@ pipeline {
 
     stage('Run in k8s') {
       steps {
-        sh '/usr/local/bin/kubectl apply -f Kubernetes/flask-api-deployment.yml'
-        sh '/usr/local/bin/kubectl apply -f Kubernetes/flask-api-service.yml'
-        sh '/usr/local/bin/kubectl apply -f Kubernetes/minikube-ingress.yml'
+        sh '/usr/local/bin/kubectl apply -f Kubernetes/flask-api-deployment.yml --ignore-not-found=true'
+        sh '/usr/local/bin/kubectl apply -f Kubernetes/flask-api-service.yml --ignore-not-found=true'
+        sh '/usr/local/bin/kubectl apply -f Kubernetes/minikube-ingress.yml --ignore-not-found=true'
       }
     }
 
