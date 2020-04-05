@@ -13,3 +13,9 @@ base_v1 = Blueprint("base_v1", __name__)
 def base_hello():
     logger.info(request.remote_addr, "Hello Base version 1.")
     return "Hello Base version 1"
+
+
+@base_v1.route('/hello', methods=['GET'])
+def base_hello_hello():
+    logger.info(request.remote_addr, "Hello")
+    return "Hello"

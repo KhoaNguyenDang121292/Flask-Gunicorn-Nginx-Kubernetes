@@ -4,16 +4,18 @@ services:
 
   flask-api:
     build: ./Flask
-    command: gunicorn --workers=5 --threads=2 -b 0.0.0.0:8000 app
+    image: localhost:5000/flask_api_service
+    command: gunicorn --workers=2 --threads=2 --bind 0.0.0.0:8000 app
     volumes:
       - ./Flask/:/app/
     ports:
-      - 8000:8000
+      - 80
     env_file:
       - ./Env/.env-dev
 
   nginx:
     build: ./nginx
+    image: localhost:5000/nginx_service
     ports:
       - 6000:80
     depends_on:

@@ -3,7 +3,7 @@ version: '3.7'
 services:
   api:
     build: ./Flask
-    command: gunicorn --workers=5 --threads=2 -b 0.0.0.0:8000 app
+    command: gunicorn --workers=2 --threads=2 -b 0.0.0.0:8000 application
     volumes:
       - ./Flask/:/usr/src/app/
     ports:
